@@ -1,24 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sistema Movers</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background-color: #ffffff;
-      color: #222222;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sistema Movers · Débora Izidio</title>
+<meta name="description" content="Sistema Movers + curso Produto da Alma: seus posts criados, editados e postados em 1 minuto. De R$ 940 por R$ 148.">
+<meta property="og:title" content="Sistema Movers · Débora Izidio">
+<meta property="og:description" content="Seus posts criados, editados e postados em 1 minuto, sem ser feito por você. De R$ 940 por R$ 148.">
+<meta property="og:image" content="https://atendimento524.github.io/sistema-movers/img/foto1-sistema.jpg">
+<link rel="icon" href="https://ia-com-alma-movers.lovable.app/assets/move-logo-Dntk54qf.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif:wght@500;600&display=swap">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#FBF4EE;font-family:'Manrope',system-ui,sans-serif;color:#2a1f24;-webkit-font-smoothing:antialiased}
+.bar{background:#6e1f35;color:#fff;text-align:center;font-size:12.5px;font-weight:800;letter-spacing:.08em;padding:9px 12px;text-transform:uppercase}
+.bar b{color:#e9c98a}
+.page{max-width:620px;margin:0 auto}
+.brand{display:flex;align-items:center;justify-content:space-between;padding:16px 18px 6px}
+.brand img{height:44px}
+.brand span{font-size:13px;color:#7a6168}
+.top{padding:8px 16px 4px}
+.foto{display:block;width:100%;height:auto;border-radius:16px;box-shadow:0 18px 40px -26px rgba(110,31,53,.55)}
+.card{border-radius:20px;padding:24px 20px;margin:-26px 10px 0;position:relative;font-size:16.5px;line-height:1.6}
+.card p{margin:0 0 12px}.card p:last-child{margin-bottom:0}
+.label{display:inline-block;border-radius:999px;padding:5px 14px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
+.c-combo{background:linear-gradient(160deg,#6e1f35 0%,#8e3566 60%,#b8613f 100%);color:#fff;text-align:center}
+.c-combo .label{background:#e9c98a;color:#6e1f35}
+.c-combo h1{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:44px;line-height:1;margin:2px 0 14px}
+.c-combo h1 i{color:#f3c9d2}
+.c-combo .lead b{color:#e9c98a}
+.price{margin-top:16px;padding-top:16px;border-top:1px dashed rgba(233,201,138,.6)}
+.price s{opacity:.75}
+.price strong{display:block;font-size:46px;font-weight:800;line-height:1.05;color:#fff}
+.price small{display:block;font-size:15px;color:#fbe7ec}
+.c-pda{background:#F9E3EA}
+.c-pda .label{background:#8e3566;color:#fff}
+.c-sis{background:#E3EFE5}
+.c-sis .label{background:#22432F;color:#fff}
+.c-bonus{background:#FBEFD6;text-align:center}
+.c-bonus .label{background:#b8613f;color:#fff}
+.hl-pink{background:#fbd5e0;border-radius:6px;padding:1px 6px;font-weight:800;color:#6e1f35}
+.hl-green{background:#c9e4cf;border-radius:6px;padding:1px 6px;font-weight:800;color:#22432F}
+.quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:21px;line-height:1.3;color:#6e1f35;text-align:center;margin:16px 0}
+.date{display:inline-block;background:#fff;border-radius:12px;padding:10px 16px;font-weight:800;color:#6e1f35;margin-top:4px}
+ul.check{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:9px}
+ul.check li{background:#fff;border-radius:12px;padding:10px 12px 10px 42px;position:relative;font-size:15.5px;line-height:1.4}
+ul.check li:before{content:"✓";position:absolute;left:12px;top:10px;width:20px;height:20px;border-radius:6px;background:#22432F;color:#fff;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.div{display:flex;align-items:center;gap:12px;margin:34px 30px 22px;color:#c6953f;font-size:18px}
+.div:before,.div:after{content:"";flex:1;height:2px;background:linear-gradient(90deg,transparent,#e9c98a,transparent)}
+/* checkout */
+.checkout{margin:34px 10px 0;padding:6px 14px 26px;background:#fff;border-radius:22px;box-shadow:0 20px 50px -30px rgba(110,31,53,.4)}
+.sec-title{font-family:'Noto Serif',serif;font-weight:600;font-size:21px;margin:22px 2px 14px}
+.bump{border:1px solid #1fa04b;border-radius:6px;overflow:hidden;margin-bottom:16px;background:#fff}
+.bump-body{display:flex;gap:14px;padding:16px}
+.bump-img{width:72px;height:72px;border-radius:4px;object-fit:cover;flex:none}
+.bump-title{font-family:'Noto Serif',serif;font-weight:600;font-size:17px;line-height:1.3;margin:0 0 6px}
+.bump-sub{font-weight:700;font-size:13px;color:#555;margin:0 0 4px}
+.bump-desc{color:#666;font-size:13.5px;line-height:1.45;margin:0}
+.bump-tags{color:#555;font-size:13px;margin:4px 0 0}
+.bump-price{margin-top:6px;font-size:13px}
+.bump-price s{color:#7b7b7b}
+.off{display:inline-flex;align-items:center;gap:3px;background:#1fa04b;color:#fff;font-weight:700;font-size:12px;border-radius:3px;padding:1px 6px;margin-left:6px}
+.bump-now{font-weight:800;font-size:16px;margin-top:2px}
+.bump-sel{padding:0 16px 14px}
+.bump-sel label{display:block;font-size:14px;margin:0 0 6px;color:#333}
+.bump-sel select{width:100%;height:46px;border:1px solid #c9c9c9;border-radius:6px;padding:0 12px;font:inherit;font-size:15px;background:#fff}
+.bump-add{display:flex;align-items:center;gap:12px;background:#e6f8ea;padding:16px;cursor:pointer;font-size:16px;user-select:none}
+.bump-add input{width:20px;height:20px;accent-color:#1fa04b;margin:0}
+.bump.on{box-shadow:0 0 0 2px #1fa04b inset}
+.details{border:1px solid #d6d6d6;border-radius:6px;padding:4px 14px}
+.drow{display:flex;justify-content:space-between;gap:10px;padding:10px 0;font-size:15px;border-bottom:1px solid #eee}
+.drow:last-child{border-bottom:none}
+.drow span:last-child{white-space:nowrap}
+.total{display:flex;justify-content:space-between;align-items:baseline;padding:12px 2px 0;font-size:15px;color:#333}
+.total strong{font-size:20px;color:#191c1f}
+.note{color:#666;font-size:14px}
+.buy{display:block;width:100%;margin:16px 0 8px;background:#1fa04b;color:#fff;text-align:center;font-weight:800;font-size:18px;padding:15px;border-radius:6px;text-decoration:none}
+.secured{text-align:center;color:#666;font-size:13px;margin:0}
+/* faq */
+.faq{margin:30px 10px 0}
+.faq h2{font-family:'Cormorant Garamond',serif;font-size:32px;color:#6e1f35;text-align:center;margin:0 0 14px}
+.faq details{background:#fff;border-radius:14px;margin-bottom:10px;padding:0 16px;box-shadow:0 8px 24px -20px rgba(110,31,53,.5)}
+.faq summary{cursor:pointer;list-style:none;padding:16px 26px 16px 0;font-weight:800;font-size:16px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:0;top:12px;font-size:22px;color:#8e3566}
+.faq details[open] summary:after{content:"–"}
+.faq details p{margin:0 0 16px;font-size:15.5px;line-height:1.55}
+.faq a{color:#8e3566;font-weight:700}
+.foot{background:#2a1f24;color:#eee;font-size:13px;line-height:1.6;padding:26px 18px 36px;margin-top:34px}
+.foot a{color:#e9c98a}
+.foot p{margin:0 0 10px}
+</style>
 </head>
 <body>
-  <p>Página em branco</p>
+<div class="bar">✦ <b>Sistema Movers</b> · posts prontos em 1 minuto ✦</div>
+<div class="page">
+<header class="brand"><img src="https://ia-com-alma-movers.lovable.app/assets/move-logo-Dntk54qf.png" alt="MOVE"><span>por Débora Izidio</span></header>
+<main class="top">
+
+  <img class="foto" src="img/foto1-sistema.jpg" alt="Sistema Movers no computador e no celular">
+  <div class="card c-combo">
+    <span class="label">Curso + Sistema</span>
+    <h1>SISTEMA <i>Movers</i> 🔥</h1>
+    <p class="lead"><b>Os seus posts criados, editados e postados em 1 minuto, sem ser feito por você.</b> Quem trabalha é o sistema.</p>
+    <p>Eu saí de 20 mil para 67 mil seguidores em 15 dias usando ele, sozinha, sem designer, sem redator e sem social media.</p>
+    <div class="price"><s>De R$ 940</s><strong>R$ 148</strong><small>ou 12x de <b id="parcela-combo">R$ 14,80</b>*</small></div>
+  </div>
+
+  <div class="div">✦</div>
+
+  <img class="foto" src="img/foto2-aula.jpg" alt="Aula da Débora passando na tela do computador">
+  <div class="card c-sis">
+    <span class="label">✅ O que ele faz por você</span>
+    <p>Você instala no Claude, uma inteligência artificial (pode ser na versão gratuita), responde algumas perguntas e <b>ele fica pronto.</b></p>
+    <ul class="check">
+      <li>Cria as ideias de posts e de stories</li>
+      <li>Escreve com a sua voz e faz a arte</li>
+      <li>Edita vídeos e carrosséis</li>
+      <li>Posta no seu Instagram e responde comentários e direct, <b>sempre com a sua autorização antes</b></li>
+      <li>Trabalha enquanto você lava a louça ou fica com as crianças</li>
+    </ul>
+  </div>
+
+  <div class="div">✦</div>
+
+  <img class="foto" src="img/foto3-produto-da-alma.jpg" alt="Curso Produto da Alma em vários aparelhos">
+  <div class="card c-pda">
+    <span class="label">✅ Já vem junto · Produto da Alma</span>
+    <p>Antes de postar, você descobre <b>o que o seu público quer comprar</b> e testa o desejo das pessoas com a nossa <span class="hl-green">ferramenta de validação</span>.</p>
+    <p>São 3 aulas para deixar o seu produto <span class="hl-pink">claro, desejável e fácil de vender.</span></p>
+  </div>
+
+  <div class="div">✦</div>
+
+  <img class="foto" src="img/foto4-como-usar.jpg" alt="Como usar o sistema: novidades e atualizações">
+  <div class="card c-bonus">
+    <span class="label">✅ Você não fica sozinha</span>
+    <p>Aulas mostrando cada parte do sistema e um <b>grupo no WhatsApp</b> com dicas, direcionamento e novidades em primeira mão, direto comigo.</p>
+    <span class="date">Pagamento único: uso vitalício</span>
+  </div>
+</main>
+
+<section class="checkout" id="compra">
+  <h2 class="sec-title">Compre junto</h2>
+  <div id="bumps"></div>
+  <h2 class="sec-title">Detalhes da compra</h2>
+  <div class="details" id="details"></div>
+  <div class="total"><span>Total</span><strong id="total">R$ 148,00</strong></div>
+  <div class="total" style="padding-top:2px"><span></span><span id="total-12x" class="note"></span></div>
+  <a id="buy" class="buy" href="#" target="_blank" rel="noopener noreferrer">Comprar agora</a>
+  <p class="secured">🔒 Pagamento seguro pela InfinitePay · Pix ou cartão em até 12x</p>
+</section>
+
+<section class="faq">
+  <h2>Perguntas frequentes</h2>
+  <details open><summary>Como recebo o acesso?</summary><p>Assim que o pagamento é aprovado, o acesso chega no seu e-mail. Olhe também a caixa de spam e a aba de promoções.</p></details>
+  <details><summary>Como funciona o suporte?</summary><p>O suporte é só pelo WhatsApp, em horário comercial, das 9h às 18h: <a href="https://api.whatsapp.com/message/CIBBMU75JO7MM1?autoload=1&app_absent=0" target="_blank" rel="noopener">(48) 99680-8931</a>. Mande o seu nome e o e-mail da compra que fica mais rápido.</p></details>
+  <details><summary>Tenho garantia de 7 dias?</summary><p>Sim. Você tem 7 dias corridos, contados da compra, para desistir. O pedido de arrependimento é feito só por e-mail, para <a href="mailto:atendimento@idicompany.com.br">atendimento@idicompany.com.br</a>.</p></details>
+  <details><summary>O que mando no e-mail para pedir o reembolso?</summary><p>Seu nome completo, o CPF, o e-mail e o telefone usados na compra, a data do pagamento e o comprovante. Esses dados servem para confirmar que você é a titular da compra e proteger você de golpes.</p></details>
+</section>
+
+<footer class="foot">
+  <p>Dúvidas sobre o produto? <a href="https://api.whatsapp.com/message/CIBBMU75JO7MM1?autoload=1&app_absent=0" target="_blank" rel="noopener">Fale comigo no WhatsApp</a> (das 9h às 18h).</p>
+  <p>Não consegue finalizar esta compra? Me chame no mesmo WhatsApp que eu te ajudo.</p>
+  <p>*O valor parcelado no cartão tem acréscimo da InfinitePay. O valor exato da parcela aparece na hora do pagamento.</p>
+  <p>Ao clicar em "Comprar agora", eu declaro que li e concordo (i) que a InfinitePay está processando este pedido em nome de Débora Izidio e não tem responsabilidade pelo conteúdo nem faz controle prévio dele; (ii) com os <a href="termos.html#termos" target="_blank">Termos de Uso</a>, a <a href="termos.html#privacidade" target="_blank">Política de Privacidade</a> e as <a href="termos.html#garantia" target="_blank">demais políticas</a>; e (iii) que sou maior de idade ou estou autorizada e acompanhada por um responsável legal.</p>
+</footer>
+</div>
+
+<script>
+  // Checkout do Portal MOVE (produto e extras em src/lib/move-products.ts do portal).
+  // Combo do link da bio: curso Produto da Alma + Sistema Movers + grupo = R$ 148.
+  var CHECKOUT = "https://portal-move-leituradaalma.lovable.app/comprar?produto=combo-sistema";
+  var MAIN = 148;
+  var FIXED = [];
+  // Acréscimo aproximado do parcelamento em 12x. Ajuste aqui se a InfinitePay mostrar outro valor.
+  var JUROS_12X = 1.2;
+  var BUMPS = [
+    {key:"lara", img:"img/bump-6-lara-ganchos.jpg", title:"Lara · 100 ganchos virais pro seu nicho", sub:"Robô com 100 títulos virais do seu nicho", desc:"Uma aula de como usar a Lara no ChatGPT ou no Claude de graça: é só falar “oi”, ela faz 2 perguntas sobre você e cria, para o seu serviço, 100 ideias de títulos que mais estão em alta para os seus posts e vídeos!", tags:"Acesso vitalício", old:47, price:9.9},
+    {key:"edits", img:"img/bump-7-video-7s-edits.jpg", title:"Vídeo de 7s editado em 1 minuto no Edits", sub:"Minicurso de edição pelo celular", desc:"2 aulas rápidas para você editar em 1 minuto, pelo celular, um vídeo de 7s com música em alta e postar todos os dias! Recomendo levar junto com a Robô Lara: você escolhe um gancho viral, edita como eu te ensino e posta em 1 minuto!", tags:"Acesso vitalício", old:47, price:7.9},
+    {key:"bio", img:"img/bump-4-bio-perfeita.jpg", title:"Robô para ajustar a sua bio no Instagram", sub:"O perfil que faz a pessoa apertar “Seguir”", desc:"Você faz 2 análises da sua bio no meu sistema, e ele mostra o que melhorar, com exemplos. E ainda ganha a minha Robô de bio para instalar no Claude ou no ChatGPT de graça, com acesso vitalício! Seu perfil melhora em 5 pontos: foto, nome, frase da bio, prova social e chamada final com o link.", tags:"", old:47, price:7.9},
+    {key:"bianca", img:"img/bump-3-bianca.jpg", title:"Bianca · a robô que quebra objeções de venda", sub:"Mensagens e scripts para vender com clareza", desc:"Você adiciona a Bianca em qualquer inteligência artificial gratuita, como o ChatGPT ou o Claude. Conforme você conversa ou manda prints das conversas com quem quer conhecer o seu trabalho, ela te dá a resposta exata: quebra objeções, contorna situações difíceis, te orienta a vender no dia a dia e cria ideias de remarketing para resgatar clientes ou buscar novos!", tags:"", old:97, price:27.9},
+    {key:"lancamento", img:"img/bump-9-lancamento.jpg", title:"Como Criar seu Lançamento", sub:"Da estrutura às vendas", desc:"4 aulas entregando tudo: o seu MAPA de lançamento, o que fazer, o que não fazer e como fazer, sem gastar 1 real em tráfego pago se você não quiser, usando habilidades que eu vou te ensinar!", tags:"Acesso vitalício das aulas", old:97, price:27.9},
+    {key:"trafego", img:"img/bump-8-trafego-pago.jpg", title:"Tráfego pago · aula para seguidores e vendas", sub:"Seus primeiros anúncios pelo celular ou computador", desc:"Um passo a passo bem fácil e leve para quem quer começar a anunciar para ganhar seguidores ou vendas e não gostou de nada do que tentou aprender até agora. Eu pego na sua mão e faço isso ficar fácil!", tags:"Acesso vitalício", old:47, price:7.9}
+  ];
+  // ========================
+  function brl(v){return "R$ "+v.toFixed(2).replace(".",",").replace(/\B(?=(\d{3})+(?!\d),)/g,".");}
+  function p12(v){return brl(Math.round(v*JUROS_12X/12*100)/100);}
+  function pct(o,n){return Math.round((1-n/o)*100);}
+  var box=document.getElementById("bumps"), chosen={};
+  BUMPS.forEach(function(b){
+    var d=document.createElement("div"); d.className="bump"; d.id="bump-"+b.key;
+    d.innerHTML='<div class="bump-body"><img class="bump-img" src="'+b.img+'" alt=""><div>'+
+      '<p class="bump-title">'+b.title+'</p><p class="bump-sub">'+b.sub+'</p><p class="bump-desc">'+b.desc+'</p>'+
+      (b.tags?'<p class="bump-tags">📅 '+b.tags+'</p>':'')+
+      '<div class="bump-price"><s>'+brl(b.old)+'</s><span class="off">↓ '+pct(b.old,b.price)+'%</span></div>'+
+      '<div class="bump-now">12 x de '+p12(b.price)+' *</div></div></div>'+
+      '<div class="bump-sel"><label for="sel-'+b.key+'">Selecione o número de parcelas</label><select id="sel-'+b.key+'">'+
+      '<option>12 x de '+p12(b.price)+' *</option><option>À vista: '+brl(b.price)+'</option></select></div>'+
+      '<label class="bump-add"><input type="checkbox" data-key="'+b.key+'"> Adicionar produto</label>';
+    box.appendChild(d);
+  });
+  var buy=document.getElementById("buy");
+  function update(){
+    var keys=FIXED.slice(), total=MAIN, rows='<div class="drow"><b>Sistema Movers + Produto da Alma</b><span>'+brl(MAIN)+'</span></div>';
+    BUMPS.forEach(function(b){ if(chosen[b.key]){ keys.push(b.key); total+=b.price; rows+='<div class="drow"><span>'+b.title+'</span><span>'+brl(b.price)+'</span></div>'; } });
+    document.getElementById("details").innerHTML=rows;
+    document.getElementById("total").textContent=brl(total);
+    document.getElementById("total-12x").textContent="ou 12 x de "+p12(total)+" *";
+    buy.textContent="Comprar agora · "+brl(total);
+    buy.href=keys.length?CHECKOUT+"&extras="+keys.join(","):CHECKOUT;
+  }
+  box.addEventListener("change",function(e){
+    var k=e.target.getAttribute&&e.target.getAttribute("data-key"); if(!k)return;
+    chosen[k]=e.target.checked; document.getElementById("bump-"+k).classList.toggle("on",e.target.checked); update();
+  });
+  document.getElementById("parcela-combo").textContent=p12(MAIN);
+  update();
+</script>
 </body>
 </html>
